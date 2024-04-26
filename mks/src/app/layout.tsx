@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "MKS Front-end challenge"
+  title: "Capputeeno"
 };
 
 export default function RootLayout({

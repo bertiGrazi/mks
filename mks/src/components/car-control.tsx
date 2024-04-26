@@ -6,34 +6,28 @@ import styled from "styled-components";
 
 const Container = styled.div`
   position: relative;
-
-  width: 90px;
-  height: 45px;
-
-  border-radius: 8px;
-
-  margin-left: 16px;
-  
-  background: #ffffff;
 `
 
 const CartCount = styled.span`
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21.94px;
-    text-align: left;
-    position: absolute;
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  padding: 0 5px;
+  font-size: 10px;
 
-    color: #000000;
+  background-color: var(--delete-color);
+  color: white;
+
+  margin-left: -10px;
 `
 
 export function CartControl() {
-  const { value } = useLocalStorage('cart-items')
+  const { value } = useLocalStorage('cart-items', [])
 
   return (
     <Container>
       <CartIcon />
-      {Array.isArray(value) && <CartCount>{value.length}</CartCount>}
+      {value.length && <CartCount>{value.length}</CartCount>}
     </Container>  
   )
 }

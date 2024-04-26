@@ -1,10 +1,11 @@
 :root {
   --border-radius: 12px;
 
-  --bg-logo-color: #0f52ba;
-  --logo-color: #ffffff;
-  --bg-input-secondary: #ffffff;
+  --bg-logo-color: #ffffff;
+  --logo-color: #737380;
+  --bg-input-secondary: #f3f5f6;
   --text-dark: #737380;
+  --delete-color: #de3838;
 }
 
 * {
